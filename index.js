@@ -1,14 +1,16 @@
-function reverseList(head) {
-    let prev = null;
-    let current = head;
-    
-    while (current !== null) {
-        const next = current.next;
-        current.next = prev;
-        prev = current;
-        current = next;
+class Node {
+    constructor(value) {
+        this.value = value;
+        this.next = null;
     }
-    
-    return prev;
 }
-module.exports = reverseList;
+
+class LinkedList {
+    constructor() {
+        this.head = null;
+    }
+
+}
+
+
+module.exports = LinkedList;
